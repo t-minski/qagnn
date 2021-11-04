@@ -21,21 +21,12 @@ Webpage: [https://snap.stanford.edu/qagnn](https://snap.stanford.edu/qagnn)
 ## Usage
 ### 0. Dependencies
 
-- [Python](<https://www.python.org/>) == 3.9.7 (3.7 originally)
-- [PyTorch](<https://pytorch.org/get-started/locally/>) == 1.10.0 (1.4.0)
-- [transformers](<https://github.com/huggingface/transformers/tree/v2.0.0>) == 2.1.1 (2.0.0)
-- [torch-geometric](https://pytorch-geometric.readthedocs.io/) == 2.0.2 (1.6.0)
+- [Python](<https://www.python.org/>) == 3.7
+- [PyTorch](<https://pytorch.org/get-started/locally/>) == 1.4.0
+- [transformers](<https://github.com/huggingface/transformers/tree/v2.0.0>) == 2.0.0
+- [torch-geometric](https://pytorch-geometric.readthedocs.io/) ==1.6.0
 
-If you have conda in your path you can install all dependencies quickly by running the script *"create_env.sh"*:
-
-```bash
-  bash ./create_env.sh
-  python -m spacy download en
-```
-
-Note: The environment will be slightly different from the original paper.
-Otherwise run the following commands to create the conda environment manually (assuming CUDA10.1) and replicate the paper's env exactly:
-
+Run the following commands to create a conda environment (assuming CUDA10.1):
 ```bash
 conda create -n qagnn python=3.7
 source activate qagnn
